@@ -14,7 +14,7 @@
 
 *An end-to-end multi-modal AI system combining Natural Language Processing (NLP), Computer Vision (CV), and Speech Signal Analysis to deliver objective, structured, and explainable interview performance evaluations.*
 
-[📖 Read Project Documentation](#-project-overview) • [👥 Team Division](#-team-division--work-distribution) • [🎓 Viva & Defense Q&A Guide](file:///c:/Users/KIIT0001/Desktop/InterVue%20AI/intervue-ai/VIVA_QA.md) • [🚀 Quick Start](#-getting-started)
+
 
 </div>
 
@@ -106,7 +106,7 @@ For the 7th Semester Minor Project, technical responsibilities are divided equal
 ```
                             PROJECT TEAM RESPONSIBILITY MATRIX (5 MEMBERS)
 ┌───────────────────┐ ┌───────────────────┐ ┌───────────────────┐ ┌───────────────────┐ ┌───────────────────┐
-│   Preeti Gupta    │ │   Pravy Jha   │ │   Shikha Kumari  │ │   Krish Gupta   │ │   Tanvi Mishra   │
+│   Preeti Gupta    │ │   Pravy Jha       │ │   Shikha Kumari   │ │   Krish Gupta     │ │   Tanvi Mishra    │
 ├───────────────────┤ ├───────────────────┤ ├───────────────────┤ ├───────────────────┤ ├───────────────────┤
 │ Core AI / ML &    │ │ Speech Processing │ │ Computer Vision & │ │ Backend Gateway & │ │ Frontend UI/UX &  │
 │ NLP Semantic      │ │ & Acoustic        │ │ Non-Verbal        │ │ Adaptive Question │ │ Interactive SVG   │
