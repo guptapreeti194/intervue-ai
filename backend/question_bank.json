@@ -1,0 +1,2171 @@
+[
+  {
+    "id": "sw-001",
+    "text": "Tell me about yourself and your technical background.",
+    "role": "Software Developer",
+    "topic": "General",
+    "subtopic": "Introduction",
+    "difficulty": "Easy",
+    "type": "HR",
+    "expected_concepts": [
+      "background",
+      "skills",
+      "experience",
+      "projects",
+      "motivation"
+    ],
+    "reference_answer": "A strong answer briefly covers educational background, key technical skills (languages, frameworks), notable projects or internships, and why you are interested in software development. It should be structured: background → skills → projects → goal. Keep it to 90–120 seconds when spoken.",
+    "rubric_hints": [
+      "Mentions specific technologies",
+      "Includes a project or achievement",
+      "Shows motivation/direction"
+    ],
+    "follow_ups": [
+      "What project are you most proud of?",
+      "What technology do you most want to learn next?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-002",
+    "text": "What is the difference between a list and a tuple in Python?",
+    "role": "Software Developer",
+    "topic": "Python",
+    "subtopic": "Data Structures",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "mutable",
+      "immutable",
+      "list",
+      "tuple",
+      "performance",
+      "hashable",
+      "use case"
+    ],
+    "reference_answer": "A list is mutable (elements can be changed after creation) and defined with square brackets. A tuple is immutable (cannot be changed after creation) and defined with parentheses. Tuples are generally faster and can be used as dictionary keys because they are hashable. Lists are preferred when the data needs to change; tuples when it should stay constant.",
+    "rubric_hints": [
+      "Explains mutability correctly",
+      "Mentions performance or hashability",
+      "Gives a practical use case"
+    ],
+    "follow_ups": [
+      "Can a tuple contain mutable elements?",
+      "When would you choose a named tuple over a dictionary?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-003",
+    "text": "Explain how you would find the time complexity of an algorithm.",
+    "role": "Software Developer",
+    "topic": "DSA",
+    "subtopic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "Big O",
+      "loop",
+      "iteration",
+      "dominant term",
+      "constant",
+      "best/worst/average case"
+    ],
+    "reference_answer": "Time complexity describes how an algorithm's runtime scales with input size. To determine it: count the basic operations (comparisons, assignments) as a function of n; ignore constants; keep the dominant term. A single loop is O(n), nested loops over n are O(n²), halving the input each step is O(log n). Always identify best, worst, and average cases where they differ.",
+    "rubric_hints": [
+      "Uses Big O notation",
+      "Explains how to count operations",
+      "Gives concrete examples"
+    ],
+    "follow_ups": [
+      "What is amortised time complexity?",
+      "How does space complexity differ from time complexity?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-004",
+    "text": "Describe a technical problem you solved and how you approached it.",
+    "role": "Software Developer",
+    "topic": "General",
+    "subtopic": "Problem Solving",
+    "difficulty": "Medium",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "problem",
+      "approach",
+      "solution",
+      "result",
+      "learning"
+    ],
+    "reference_answer": "Use the STAR structure: Situation (describe the technical problem clearly), Task (your responsibility), Action (your approach — research, debugging, design decisions), Result (outcome and what you learned). Quantify the result if possible.",
+    "rubric_hints": [
+      "Uses structured STAR format",
+      "Describes specific steps taken",
+      "States the outcome and learning"
+    ],
+    "follow_ups": [
+      "What would you do differently next time?",
+      "How did you collaborate with others on this?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-005",
+    "text": "What is Object-Oriented Programming and what are its four main principles?",
+    "role": "Software Developer",
+    "topic": "Python",
+    "subtopic": "OOP",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "encapsulation",
+      "inheritance",
+      "polymorphism",
+      "abstraction",
+      "class",
+      "object"
+    ],
+    "reference_answer": "OOP organises code around objects that combine data (attributes) and behaviour (methods). The four principles are: Encapsulation — bundling data and methods and hiding internal details; Inheritance — a class deriving properties from a parent class; Polymorphism — different classes sharing the same interface; Abstraction — exposing only essential details.",
+    "rubric_hints": [
+      "Names all four principles",
+      "Defines each correctly",
+      "Gives a real-world analogy or code example"
+    ],
+    "follow_ups": [
+      "How does Python implement encapsulation differently from Java?",
+      "What is method overriding?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-006",
+    "text": "Explain the difference between a stack and a queue, and give a use case for each.",
+    "role": "Software Developer",
+    "topic": "DSA",
+    "subtopic": "Linear Structures",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "LIFO",
+      "FIFO",
+      "stack",
+      "queue",
+      "push",
+      "pop",
+      "enqueue",
+      "dequeue",
+      "use case"
+    ],
+    "reference_answer": "A stack follows LIFO (Last In, First Out): the last element pushed is the first popped. Use cases include function call stacks and undo operations. A queue follows FIFO (First In, First Out): the first element enqueued is the first dequeued. Use cases include print spoolers, BFS traversal, and task scheduling.",
+    "rubric_hints": [
+      "Correctly states LIFO and FIFO",
+      "Names real use cases",
+      "Describes operations"
+    ],
+    "follow_ups": [
+      "How would you implement a stack using two queues?",
+      "What is a priority queue?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-007",
+    "text": "What is the difference between == and is in Python?",
+    "role": "Software Developer",
+    "topic": "Python",
+    "subtopic": "Identity vs Equality",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "equality",
+      "identity",
+      "value",
+      "reference",
+      "id()",
+      "None comparison"
+    ],
+    "reference_answer": "== compares values (are the contents equal?). is compares identity (are they the exact same object in memory?). For example, two lists with the same elements are == but not is. Always use is when checking against None (e.g. if x is None) because None is a singleton.",
+    "rubric_hints": [
+      "Distinguishes value vs identity",
+      "Mentions id() or memory",
+      "Gives the None example"
+    ],
+    "follow_ups": [
+      "Why can == behave unexpectedly with small integers in CPython?",
+      "What is Python's interning?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-001",
+    "text": "Tell me about yourself.",
+    "role": "HR / Behavioral",
+    "topic": "General",
+    "subtopic": "Introduction",
+    "difficulty": "Easy",
+    "type": "HR",
+    "expected_concepts": [
+      "background",
+      "skills",
+      "experience",
+      "goal",
+      "concise"
+    ],
+    "reference_answer": "A strong 60–90 second answer covers: who you are academically/professionally, key skills or experiences relevant to the role, one notable achievement or project, and why you are applying. Avoid reading a CV chronologically. Tailor it to the role.",
+    "rubric_hints": [
+      "Is concise and structured",
+      "Highlights relevant strengths",
+      "Ends with a clear goal or motivation"
+    ],
+    "follow_ups": [
+      "What is your biggest professional achievement?",
+      "Where do you see yourself in three years?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-002",
+    "text": "Describe a challenge you faced and how you handled it.",
+    "role": "HR / Behavioral",
+    "topic": "Problem Solving",
+    "subtopic": "Resilience",
+    "difficulty": "Easy",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "challenge",
+      "action",
+      "result",
+      "learning",
+      "STAR"
+    ],
+    "reference_answer": "Use the STAR method. Describe a specific challenge (not a vague one), the actions you took, the outcome, and what you learned. The challenge should be genuine and the resolution should demonstrate your agency.",
+    "rubric_hints": [
+      "Uses STAR or similar structure",
+      "Takes ownership of the actions",
+      "States the outcome and learning"
+    ],
+    "follow_ups": [
+      "What would you do differently?",
+      "How did this experience change how you approach problems?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-003",
+    "text": "Tell me about a time you worked in a team.",
+    "role": "HR / Behavioral",
+    "topic": "Teamwork",
+    "subtopic": "Collaboration",
+    "difficulty": "Easy",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "collaboration",
+      "role",
+      "conflict",
+      "communication",
+      "outcome"
+    ],
+    "reference_answer": "Describe a specific team project, your role, how you contributed, how the team handled disagreements or division of work, and the final outcome. Emphasise communication, adaptability, and respect for others' contributions.",
+    "rubric_hints": [
+      "Describes a specific team situation",
+      "Explains personal contribution",
+      "Mentions outcome and teamwork quality"
+    ],
+    "follow_ups": [
+      "How did you handle disagreements within the team?",
+      "What would you improve about your teamwork?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-004",
+    "text": "How do you handle feedback or criticism?",
+    "role": "HR / Behavioral",
+    "topic": "Self-Awareness",
+    "subtopic": "Growth Mindset",
+    "difficulty": "Easy",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "listen",
+      "reflect",
+      "improve",
+      "openness",
+      "example"
+    ],
+    "reference_answer": "A strong answer shows openness to feedback, an ability to reflect without defensiveness, and an example of acting on feedback to improve. Avoid saying 'I don't handle criticism well' or being vague. Show growth mindset.",
+    "rubric_hints": [
+      "Shows openness and maturity",
+      "Gives a concrete example",
+      "Describes the improvement made"
+    ],
+    "follow_ups": [
+      "Give an example where you disagreed with feedback. What did you do?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-005",
+    "text": "What are your strengths and areas for improvement?",
+    "role": "HR / Behavioral",
+    "topic": "Self-Awareness",
+    "subtopic": "Self-Assessment",
+    "difficulty": "Easy",
+    "type": "HR",
+    "expected_concepts": [
+      "strength",
+      "weakness",
+      "improvement",
+      "self-awareness",
+      "action"
+    ],
+    "reference_answer": "Name 2–3 genuine strengths with evidence. For areas of improvement, be honest but choose something you are actively working on — show self-awareness and initiative. Avoid clichés like 'I work too hard'.",
+    "rubric_hints": [
+      "Names specific, credible strengths",
+      "Gives honest but tactful weakness",
+      "Mentions steps to improve"
+    ],
+    "follow_ups": [
+      "How are you working on your areas of improvement?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-001",
+    "text": "What is the difference between WHERE and HAVING in SQL?",
+    "role": "Data Analyst",
+    "topic": "SQL",
+    "subtopic": "Filtering",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "WHERE",
+      "HAVING",
+      "GROUP BY",
+      "aggregate",
+      "filter",
+      "rows",
+      "groups"
+    ],
+    "reference_answer": "WHERE filters individual rows before any grouping or aggregation. HAVING filters groups after GROUP BY and aggregate functions have been applied. Example: WHERE age > 18 filters rows before grouping; HAVING COUNT(*) > 5 filters groups with more than five members.",
+    "rubric_hints": [
+      "Correctly states pre/post aggregation",
+      "Gives a concrete example",
+      "Mentions GROUP BY"
+    ],
+    "follow_ups": [
+      "Can you use aggregate functions in WHERE?",
+      "What happens if you use HAVING without GROUP BY?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-002",
+    "text": "Explain the difference between INNER JOIN and LEFT JOIN.",
+    "role": "Data Analyst",
+    "topic": "SQL",
+    "subtopic": "Joins",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "matching rows",
+      "NULL",
+      "all rows",
+      "intersection"
+    ],
+    "reference_answer": "INNER JOIN returns only rows where there is a match in both tables. LEFT JOIN returns all rows from the left table and matching rows from the right; where there is no match, right-side columns are NULL. Use INNER JOIN when you only care about matches; LEFT JOIN when you need all records from the left table regardless.",
+    "rubric_hints": [
+      "Correctly defines both joins",
+      "Mentions NULL for unmatched rows",
+      "Gives or implies a use case"
+    ],
+    "follow_ups": [
+      "What is a RIGHT JOIN? What about a FULL OUTER JOIN?",
+      "How would you find rows in table A that have no match in table B?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-003",
+    "text": "How would you handle missing values in a dataset?",
+    "role": "Data Analyst",
+    "topic": "Data Analysis",
+    "subtopic": "Data Cleaning",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "null",
+      "missing",
+      "imputation",
+      "drop",
+      "mean",
+      "median",
+      "mode",
+      "forward fill",
+      "domain knowledge"
+    ],
+    "reference_answer": "First understand why values are missing (MCAR, MAR, MNAR). Options include: deleting rows/columns if missingness is rare or random; imputing with mean/median/mode for numerical data; using forward fill for time-series; using domain knowledge for categorical data; or using model-based imputation. Always document what you did and assess the impact.",
+    "rubric_hints": [
+      "Mentions multiple strategies",
+      "Considers why values are missing",
+      "Mentions validation after imputation"
+    ],
+    "follow_ups": [
+      "What is the difference between MCAR, MAR, and MNAR?",
+      "When would deletion be preferred over imputation?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-004",
+    "text": "What is the difference between a mean and a median?",
+    "role": "Data Analyst",
+    "topic": "Statistics",
+    "subtopic": "Descriptive Statistics",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "mean",
+      "median",
+      "average",
+      "middle value",
+      "outlier",
+      "skew"
+    ],
+    "reference_answer": "The mean is the arithmetic average (sum divided by count). The median is the middle value when data is sorted. The median is more robust to outliers — for example, in salary data with a few very high earners, the median better represents the typical salary. Use mean when the distribution is roughly symmetric; median when it is skewed or has outliers.",
+    "rubric_hints": [
+      "Defines both correctly",
+      "Mentions outlier sensitivity",
+      "States when to use each"
+    ],
+    "follow_ups": [
+      "What is the mode? When is it useful?",
+      "What does it mean if median > mean for a dataset?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-005",
+    "text": "Describe a project where you used data to solve a problem.",
+    "role": "Data Analyst",
+    "topic": "General",
+    "subtopic": "Project Experience",
+    "difficulty": "Medium",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "data",
+      "problem",
+      "analysis",
+      "insight",
+      "result",
+      "tool"
+    ],
+    "reference_answer": "Use STAR: Situation (the problem), Task (your role), Action (data collection, cleaning, analysis, visualisation), Result (insight or decision enabled by your analysis). Mention tools used (Python, SQL, Excel, Tableau) and quantify the impact where possible.",
+    "rubric_hints": [
+      "Describes a concrete project",
+      "Mentions tools and methods",
+      "States a measurable or meaningful result"
+    ],
+    "follow_ups": [
+      "What data quality issues did you encounter?",
+      "How did stakeholders react to your findings?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-001",
+    "text": "What is the difference between var, let, and const in JavaScript?",
+    "role": "Frontend Developer",
+    "topic": "JavaScript",
+    "subtopic": "Variable Declarations",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "var",
+      "let",
+      "const",
+      "scope",
+      "hoisting",
+      "block",
+      "function",
+      "reassignment",
+      "redeclaration"
+    ],
+    "reference_answer": "var is function-scoped and hoisted (initialised to undefined). let and const are block-scoped and not initialised at hoisting (temporal dead zone). let allows reassignment; const does not (though object properties can still change). In modern code, prefer const by default and let when reassignment is needed; avoid var.",
+    "rubric_hints": [
+      "Correctly states scope differences",
+      "Mentions hoisting behaviour",
+      "Recommends modern best practice"
+    ],
+    "follow_ups": [
+      "What is the temporal dead zone?",
+      "Can you reassign a const array's elements?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-002",
+    "text": "What are React hooks and why were they introduced?",
+    "role": "Frontend Developer",
+    "topic": "React",
+    "subtopic": "Hooks",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "useState",
+      "useEffect",
+      "class components",
+      "functional components",
+      "side effects",
+      "reuse",
+      "lifecycle"
+    ],
+    "reference_answer": "React hooks (introduced in React 16.8) let you use state and other React features in functional components without writing a class. They solve the difficulty of reusing stateful logic across components and make code easier to understand. Key hooks include useState (local state), useEffect (side effects, replaces lifecycle methods), useContext, useRef, and useMemo.",
+    "rubric_hints": [
+      "Explains why hooks were introduced",
+      "Names at least two hooks correctly",
+      "Mentions functional vs class components"
+    ],
+    "follow_ups": [
+      "What rules must you follow when using hooks?",
+      "What is the difference between useEffect and useLayoutEffect?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-001",
+    "text": "What is a REST API and what are its main principles?",
+    "role": "Backend Developer",
+    "topic": "API Design",
+    "subtopic": "REST",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "REST",
+      "stateless",
+      "HTTP",
+      "resource",
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "JSON",
+      "URL",
+      "idempotent"
+    ],
+    "reference_answer": "REST (Representational State Transfer) is an architectural style for designing networked APIs using standard HTTP methods. Key principles: stateless (no session state on the server), resources identified by URLs, standard HTTP verbs (GET to read, POST to create, PUT/PATCH to update, DELETE to remove), responses typically in JSON, and uniform interface. Idempotent methods (GET, PUT, DELETE) return the same result when called multiple times.",
+    "rubric_hints": [
+      "Explains statelessness",
+      "Lists main HTTP verbs with their purpose",
+      "Mentions resources and URLs"
+    ],
+    "follow_ups": [
+      "What is the difference between PUT and PATCH?",
+      "How does REST differ from GraphQL?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-002",
+    "text": "Explain the difference between SQL and NoSQL databases.",
+    "role": "Backend Developer",
+    "topic": "Databases",
+    "subtopic": "Database Types",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "SQL",
+      "NoSQL",
+      "schema",
+      "relational",
+      "document",
+      "key-value",
+      "scalability",
+      "ACID",
+      "BASE",
+      "use case"
+    ],
+    "reference_answer": "SQL (relational) databases use tables with fixed schemas, support complex queries and joins, and follow ACID properties. NoSQL databases (document, key-value, column, graph) have flexible schemas and are designed for scalability and specific data models. SQL suits structured data with complex relationships (finance, ERP). NoSQL suits unstructured or rapidly evolving data at scale (real-time apps, content).",
+    "rubric_hints": [
+      "Contrasts schema flexibility",
+      "Mentions ACID vs BASE or scalability",
+      "Gives appropriate use cases"
+    ],
+    "follow_ups": [
+      "What is a document store vs a key-value store?",
+      "When would you choose MongoDB over PostgreSQL?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "os-001",
+    "text": "What is a process and how is it different from a thread?",
+    "role": "Software Developer",
+    "topic": "Operating Systems",
+    "subtopic": "Concurrency",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "process",
+      "thread",
+      "memory",
+      "isolation",
+      "shared",
+      "context switch",
+      "lightweight",
+      "PCB"
+    ],
+    "reference_answer": "A process is an independent program in execution with its own memory space (address space, heap, stack). A thread is a unit of execution within a process; threads share the process's memory and resources. Creating a thread is cheaper than a new process (lighter context switch). Processes are isolated (a crash in one doesn't affect others), while threads in the same process can corrupt shared memory.",
+    "rubric_hints": [
+      "Correctly defines both",
+      "Mentions memory isolation vs sharing",
+      "Mentions performance difference"
+    ],
+    "follow_ups": [
+      "What is a deadlock?",
+      "How does Python's GIL affect threads?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-001",
+    "text": "How do you prioritise features when you have more requests than resources?",
+    "role": "Product Manager",
+    "topic": "Product Strategy",
+    "subtopic": "Prioritisation",
+    "difficulty": "Medium",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "framework",
+      "impact",
+      "effort",
+      "user",
+      "business value",
+      "RICE",
+      "MoSCoW",
+      "data",
+      "stakeholder"
+    ],
+    "reference_answer": "Use a prioritisation framework such as RICE (Reach, Impact, Confidence, Effort), MoSCoW (Must Have, Should Have, Could Have, Won't Have), or value vs effort matrix. Combine quantitative data (usage metrics, business impact) with qualitative input (user research, stakeholder needs). Always communicate trade-offs transparently.",
+    "rubric_hints": [
+      "Mentions a specific framework",
+      "Considers both impact and effort",
+      "Mentions stakeholder alignment or data"
+    ],
+    "follow_ups": [
+      "How do you handle a stakeholder who disagrees with your prioritisation?",
+      "Give an example where you deprioritised a feature with strong stakeholder support."
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-008",
+    "text": "Explain how Dijkstra's algorithm works and its time complexity when implemented with a min-priority queue.",
+    "role": "Software Developer",
+    "topic": "DSA",
+    "subtopic": "Graph Algorithms",
+    "difficulty": "Hard",
+    "type": "Technical",
+    "expected_concepts": [
+      "shortest path",
+      "greedy",
+      "min-heap",
+      "priority queue",
+      "non-negative weights",
+      "O((V + E) log V)",
+      "relaxation"
+    ],
+    "reference_answer": "Dijkstra's algorithm finds the shortest path from a source node to all other nodes in a graph with non-negative edge weights. It maintains tentative distances, initialized to infinity except 0 for the source. Using a min-priority queue (min-heap), it repeatedly extracts the node with the smallest distance, visits each neighbor, and performs edge relaxation (updating distances if a shorter path is found). Its time complexity with an adjacency list and binary min-heap is O((V + E) log V). It does not work reliably with negative edge weights.",
+    "rubric_hints": [
+      "Mentions non-negative weights constraint",
+      "Explains relaxation step",
+      "Correctly states O((V + E) log V) time complexity"
+    ],
+    "follow_ups": [
+      "Why does Dijkstra fail with negative weight cycles?",
+      "How does the Bellman-Ford algorithm differ?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-009",
+    "text": "What are the core architectural principles of RESTful API design?",
+    "role": "Software Developer",
+    "topic": "API Design",
+    "subtopic": "Web Services",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "stateless",
+      "client-server",
+      "uniform interface",
+      "resource-based",
+      "HTTP methods",
+      "caching",
+      "idempotence"
+    ],
+    "reference_answer": "REST (Representational State Transfer) is an architectural style based on: 1) Client-server separation; 2) Statelessness (each request contains all needed information); 3) Uniform interface with URI-identified resources (nouns) and HTTP methods (GET, POST, PUT, DELETE); 4) Explicit caching controls via HTTP headers; 5) Layered system architecture. Key principles include proper use of status codes (200, 201, 400, 404, 500) and adhering to idempotency for GET, PUT, and DELETE.",
+    "rubric_hints": [
+      "Mentions statelessness",
+      "Differentiates resources and HTTP verbs",
+      "Mentions HTTP status codes and idempotence"
+    ],
+    "follow_ups": [
+      "When would you choose GraphQL or gRPC over REST?",
+      "What is HATEOAS in REST?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-010",
+    "text": "Explain database normalization and the difference between Second Normal Form (2NF) and Third Normal Form (3NF).",
+    "role": "Software Developer",
+    "topic": "Databases",
+    "subtopic": "Schema Design",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "normalization",
+      "redundancy",
+      "anomalies",
+      "primary key",
+      "partial dependency",
+      "transitive dependency",
+      "1NF",
+      "2NF",
+      "3NF"
+    ],
+    "reference_answer": "Normalization organizes database relations to reduce data redundancy and eliminate insert, update, and delete anomalies. 1NF requires atomic values and unique records. 2NF requires 1NF plus eliminating partial dependencies (every non-key attribute must depend on the whole composite primary key). 3NF requires 2NF plus eliminating transitive dependencies (non-key attributes must depend directly on the primary key, not through another non-key attribute: 'nothing but the key').",
+    "rubric_hints": [
+      "Defines normalization purpose",
+      "Explains partial dependency for 2NF",
+      "Explains transitive dependency for 3NF"
+    ],
+    "follow_ups": [
+      "When is denormalization intentionally used in production databases?",
+      "What is Boyce-Codd Normal Form (BCNF)?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-011",
+    "text": "Explain the difference between synchronous and asynchronous programming, and how event loops manage concurrency.",
+    "role": "Software Developer",
+    "topic": "General",
+    "subtopic": "Concurrency",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "blocking",
+      "non-blocking",
+      "event loop",
+      "callbacks",
+      "promises",
+      "async/await",
+      "threads",
+      "I/O bound"
+    ],
+    "reference_answer": "In synchronous programming, operations execute sequentially and block the thread until completion. In asynchronous programming, long-running operations (like network requests or file I/O) are dispatched without blocking the execution thread, allowing other tasks to proceed. The runtime uses an event loop, call stack, and task queue to process completed asynchronous callbacks when the stack clears. In modern languages, promises and async/await syntax provide clean asynchronous control flow.",
+    "rubric_hints": [
+      "Clearly explains blocking vs non-blocking",
+      "Explains how the event loop coordinates execution",
+      "Gives concrete real-world use cases (e.g. network I/O)"
+    ],
+    "follow_ups": [
+      "How does CPU-bound work differ from I/O-bound work in asynchronous systems?",
+      "What is thread starvation?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-012",
+    "text": "How would you design a distributed rate limiter to handle millions of requests across multiple servers?",
+    "role": "Software Developer",
+    "topic": "API Design",
+    "subtopic": "System Design",
+    "difficulty": "Hard",
+    "type": "Technical",
+    "expected_concepts": [
+      "token bucket",
+      "leaky bucket",
+      "sliding window",
+      "Redis",
+      "distributed state",
+      "race conditions",
+      "HTTP 429",
+      "latency"
+    ],
+    "reference_answer": "A distributed rate limiter throttles incoming requests per user, IP, or API key. Common algorithms include Token Bucket, Leaky Bucket, and Sliding Window Counter. In a distributed environment, rate limits are stored in a centralized, low-latency in-memory cache such as Redis. Using Redis Lua scripts or atomic increments ensures atomicity and avoids race conditions across multiple application nodes. When the limit is reached, return HTTP 429 Too Many Requests with a Retry-After header. For resilience, fall back to local in-memory limiting if Redis is temporarily unreachable.",
+    "rubric_hints": [
+      "Explains a specific algorithm (Token Bucket or Sliding Window)",
+      "Addresses distributed state and synchronization with Redis",
+      "Mentions HTTP 429 and fault tolerance"
+    ],
+    "follow_ups": [
+      "How would you handle clock drift across distributed nodes?",
+      "How would you handle bursty traffic gracefully?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "sw-013",
+    "text": "What is a race condition in concurrent software, and how do mutexes, semaphores, and deadlocks relate to it?",
+    "role": "Software Developer",
+    "topic": "Operating Systems",
+    "subtopic": "Concurrency & Synchronization",
+    "difficulty": "Hard",
+    "type": "Technical",
+    "expected_concepts": [
+      "race condition",
+      "critical section",
+      "mutex",
+      "semaphore",
+      "deadlock",
+      "mutual exclusion",
+      "shared memory",
+      "atomic"
+    ],
+    "reference_answer": "A race condition occurs when multiple threads concurrently access and modify shared memory, causing non-deterministic outcomes depending on execution order. To prevent this, critical sections must be synchronized. A mutex (mutual exclusion) allows only one thread to access a resource at a time. A semaphore is a signaling mechanism maintaining a counter, allowing up to N threads access. Deadlock happens when two or more threads are permanently blocked waiting for locks held by each other, typically satisfying Coffman's conditions: mutual exclusion, hold-and-wait, no preemption, and circular wait.",
+    "rubric_hints": [
+      "Defines race conditions accurately",
+      "Differentiates mutex and semaphore",
+      "Explains deadlock conditions and prevention"
+    ],
+    "follow_ups": [
+      "How can lock-free data structures prevent deadlocks?",
+      "What is priority inversion in thread scheduling?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-003",
+    "text": "What is the difference between var, let, and const in JavaScript, and what is variable hoisting?",
+    "role": "Frontend Developer",
+    "topic": "JavaScript",
+    "subtopic": "Core Fundamentals",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "var",
+      "let",
+      "const",
+      "scope",
+      "function scope",
+      "block scope",
+      "hoisting",
+      "temporal dead zone",
+      "reassignment"
+    ],
+    "reference_answer": "var is function-scoped and hoisted to the top of its scope initialized as undefined, which often led to subtle bugs. let and const are block-scoped (scoped to curly braces {}) introduced in ES6. While let and const are also hoisted, they remain in the Temporal Dead Zone (TDZ) and throw a ReferenceError if accessed before declaration. const variables cannot be reassigned, whereas let variables can. However, objects declared with const can still have their internal properties mutated.",
+    "rubric_hints": [
+      "Differentiates block scope vs function scope",
+      "Explains Temporal Dead Zone accurately",
+      "Explains mutability vs reassignment for const"
+    ],
+    "follow_ups": [
+      "How does Object.freeze() differ from const?",
+      "What happens when you declare a variable without any keyword?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-004",
+    "text": "Explain event bubbling, event capturing, and event delegation in the browser DOM.",
+    "role": "Frontend Developer",
+    "topic": "JavaScript",
+    "subtopic": "DOM & Events",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "event propagation",
+      "capturing",
+      "bubbling",
+      "target",
+      "event delegation",
+      "stopPropagation",
+      "addEventListener"
+    ],
+    "reference_answer": "DOM event propagation has three phases: capturing (event travels down from window to target), target phase, and bubbling (event bubbles up from target back to window). Event delegation leverages bubbling by attaching a single event listener to a common parent element rather than individual child elements. The handler inspects event.target to determine which child triggered the action, reducing memory overhead and automatically handling dynamically added elements.",
+    "rubric_hints": [
+      "Explains capturing down and bubbling up",
+      "Defines event delegation with memory benefits",
+      "Mentions event.target and stopPropagation"
+    ],
+    "follow_ups": [
+      "Which DOM events do not bubble?",
+      "What is event.preventDefault() vs event.stopPropagation()?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-005",
+    "text": "What are React Hooks, why were they introduced, and what rules must you follow when using them?",
+    "role": "Frontend Developer",
+    "topic": "React",
+    "subtopic": "Hooks Fundamentals",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "useState",
+      "useEffect",
+      "functional components",
+      "rules of hooks",
+      "top level",
+      "lifecycle",
+      "code reuse",
+      "custom hooks"
+    ],
+    "reference_answer": "React Hooks allow functional components to use state, lifecycle events, and side effects without writing class components. They were introduced to promote logic reuse through custom hooks, simplify complex component code, and eliminate 'this' binding pitfalls. The two essential Rules of Hooks are: 1) Only call hooks at the top level (never inside loops, conditions, or nested functions); 2) Only call hooks from React function components or custom hooks. This ensures React maintains hook state across renders using call order.",
+    "rubric_hints": [
+      "Explains why hooks were created",
+      "States both fundamental Rules of Hooks",
+      "Mentions state and side-effect management"
+    ],
+    "follow_ups": [
+      "Why does React rely on call order for hooks?",
+      "When should you write a custom hook?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-006",
+    "text": "How does the Virtual DOM work in React, and how does reconciliation optimize rendering performance?",
+    "role": "Frontend Developer",
+    "topic": "React",
+    "subtopic": "Internals & Reconciliation",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "Virtual DOM",
+      "reconciliation",
+      "diffing algorithm",
+      "keys",
+      "batching",
+      "fiber",
+      "render tree"
+    ],
+    "reference_answer": "The Virtual DOM is a lightweight in-memory JavaScript representation of the real DOM. When state or props change, React generates a new Virtual DOM tree and runs a diffing algorithm (reconciliation) comparing it with the previous snapshot. React calculates the minimum set of mutations and batches updates to the real DOM. React optimizes this to O(n) complexity using heuristics: elements of different types generate different trees, and the 'key' prop enables tracking list items across renders without re-mounting.",
+    "rubric_hints": [
+      "Explains lightweight in-memory representation",
+      "Explains diffing and batched real DOM updates",
+      "Explains the significance of keys in lists"
+    ],
+    "follow_ups": [
+      "What is the React Fiber architecture?",
+      "Why is index as a key considered an anti-pattern when list order changes?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-007",
+    "text": "How would you diagnose and optimize rendering performance bottlenecks in a large React single-page application?",
+    "role": "Frontend Developer",
+    "topic": "React",
+    "subtopic": "Performance Optimization",
+    "difficulty": "Hard",
+    "type": "Technical",
+    "expected_concepts": [
+      "React Profiler",
+      "memoization",
+      "useMemo",
+      "useCallback",
+      "React.memo",
+      "code splitting",
+      "React.lazy",
+      "virtualization",
+      "bundle size"
+    ],
+    "reference_answer": "To optimize a React SPA: 1) Measure using React DevTools Profiler and Chrome Lighthouse/Performance tab to identify expensive re-renders and large bundles; 2) Eliminate unnecessary re-renders using React.memo on pure presentational components, and memoize values and callbacks with useMemo and useCallback where reference equality matters; 3) Implement code-splitting using React.lazy and dynamic imports with Suspense to reduce initial bundle payload; 4) Use list virtualization (e.g., react-window) for large datasets; 5) Optimize asset delivery, caching, and tree-shaking.",
+    "rubric_hints": [
+      "Starts with measurement/profiling tools",
+      "Explains memoization tools correctly",
+      "Mentions code splitting and virtualization"
+    ],
+    "follow_ups": [
+      "What are the trade-offs of over-using useMemo and useCallback?",
+      "How do web workers help keep frontend UI responsive?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-008",
+    "text": "What is a closure in JavaScript, and what is a practical real-world scenario where you would use one?",
+    "role": "Frontend Developer",
+    "topic": "JavaScript",
+    "subtopic": "Scope & Closures",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "closure",
+      "lexical scope",
+      "outer function",
+      "inner function",
+      "data encapsulation",
+      "private variables",
+      "currying",
+      "debounce"
+    ],
+    "reference_answer": "A closure is the combination of a function bundled together with references to its surrounding lexical environment. An inner function retains access to variables declared in its outer function's scope even after the outer function has finished executing. Practical applications include: 1) Data encapsulation and private state (e.g., creating module patterns with private variables); 2) Function factories and currying; 3) Debounce or throttle utility functions where timer state is preserved across repeated invocations.",
+    "rubric_hints": [
+      "Accurately defines lexical scope retention",
+      "Provides a concrete practical example like debounce or private state",
+      "Explains garbage collection implications"
+    ],
+    "follow_ups": [
+      "Can closures cause memory leaks in JavaScript?",
+      "How do closures work inside loop variables with var vs let?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-009",
+    "text": "Explain the differences between CSS Flexbox and CSS Grid, and provide guidelines on when to choose one over the other.",
+    "role": "Frontend Developer",
+    "topic": "General",
+    "subtopic": "CSS & Responsive Layout",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "Flexbox",
+      "CSS Grid",
+      "one-dimensional",
+      "two-dimensional",
+      "content-first",
+      "layout-first",
+      "alignment",
+      "responsive"
+    ],
+    "reference_answer": "Flexbox is one-dimensional: it handles layout along a single axis (either row or column) at a time, making it ideal for aligning UI components, navigation bars, button groups, and linear content flows. CSS Grid is two-dimensional: it simultaneously manages both rows and columns, making it suited for overall page layout, complex dashboard grids, and card galleries with fixed aspect ratios. A common pattern is using Grid for the macroeconomic page skeleton and Flexbox for micro-alignments inside components.",
+    "rubric_hints": [
+      "Specifies 1D (Flexbox) vs 2D (Grid)",
+      "Provides clear rules of thumb for choosing between them",
+      "Discusses responsive design considerations"
+    ],
+    "follow_ups": [
+      "How do minmax() and auto-fit in CSS Grid create responsive layouts without media queries?",
+      "What is the flex-shorthand syntax?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-010",
+    "text": "How do you evaluate and structure state management in a large-scale frontend application?",
+    "role": "Frontend Developer",
+    "topic": "React",
+    "subtopic": "Frontend Architecture",
+    "difficulty": "Hard",
+    "type": "Technical",
+    "expected_concepts": [
+      "local state",
+      "global state",
+      "server state",
+      "URL state",
+      "Redux",
+      "Zustand",
+      "React Query/TanStack",
+      "Context API",
+      "caching"
+    ],
+    "reference_answer": "In large frontend applications, state should be categorized into four distinct layers: 1) Local UI state (useState/useReducer) for component-specific interactions like modal visibility; 2) Server state (TanStack Query/RTK Query) for asynchronous backend data with automatic caching, background refetching, and deduping; 3) URL state (search params) for shareable filter/pagination state; 4) Global client state (Zustand/Redux) reserved strictly for app-wide user preferences, cart, or authenticated sessions. Avoid putting server cache into generic client stores.",
+    "rubric_hints": [
+      "Categorizes state (server vs client vs URL vs local)",
+      "Recommends server-state libraries for remote data",
+      "Avoids global state over-engineering"
+    ],
+    "follow_ups": [
+      "What problems occur when storing server data in global stores like Redux?",
+      "How does URL-driven state enhance user experience?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-011",
+    "text": "Tell me about a difficult cross-browser bug or responsive layout issue you faced and how you debugged and fixed it.",
+    "role": "Frontend Developer",
+    "topic": "General",
+    "subtopic": "Problem Solving",
+    "difficulty": "Medium",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "STAR method",
+      "browser devtools",
+      "reproduction",
+      "cross-browser",
+      "Safari/iOS",
+      "viewport",
+      "fix",
+      "regression test"
+    ],
+    "reference_answer": "Use the STAR method: Situation (describe the application, the specific browser/device where the layout broke, e.g., Safari iOS 100vh dynamic toolbar issue or CSS subgrid discrepancy); Task (what was expected vs what happened); Action (how you reproduced it, used remote debugging with Safari Web Inspector or Chrome DevTools device mode, identified root cause, and implemented standard workarounds like dvh units or feature queries @supports); Result (bug resolved, verified across devices, and added automated visual regression testing).",
+    "rubric_hints": [
+      "Follows STAR structure",
+      "Mentions specific debugging tools and methodologies",
+      "Shares testing and prevention steps"
+    ],
+    "follow_ups": [
+      "What automated tools do you use for cross-browser testing?",
+      "How do you handle progressive enhancement?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "fe-012",
+    "text": "Why did you choose frontend development, and how do you stay updated with the fast-evolving JavaScript ecosystem?",
+    "role": "Frontend Developer",
+    "topic": "General",
+    "subtopic": "Career & Motivation",
+    "difficulty": "Easy",
+    "type": "HR",
+    "expected_concepts": [
+      "user empathy",
+      "visual feedback",
+      "continuous learning",
+      "community",
+      "blogs/podcasts",
+      "specifications",
+      "experimentation"
+    ],
+    "reference_answer": "A strong answer combines passion for direct user impact with a structured learning habit. Highlight the satisfaction of transforming complex systems into intuitive, accessible user interfaces with immediate visual feedback. Discuss learning channels such as following TC39 ECMAScript proposals, web standards, official framework docs, technical blogs, podcasts, and personal side projects to experiment with new tooling before adopting it in production.",
+    "rubric_hints": [
+      "Expresses genuine user-centric enthusiasm",
+      "Names specific learning resources or communities",
+      "Demonstrates thoughtful adoption of new tools"
+    ],
+    "follow_ups": [
+      "What is a recent web platform feature you find most exciting?",
+      "How do you evaluate whether a new library is production-ready?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-003",
+    "text": "What is the difference between HTTP GET, POST, PUT, and PATCH methods, and what does idempotency mean?",
+    "role": "Backend Developer",
+    "topic": "API Design",
+    "subtopic": "HTTP Protocol",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "idempotent",
+      "safe",
+      "full replacement",
+      "partial update",
+      "side effects"
+    ],
+    "reference_answer": "GET retrieves a resource; it is safe and idempotent (produces no side effects). POST creates a subordinate resource; it is neither safe nor idempotent (calling it multiple times creates multiple records). PUT replaces the entire target resource with the uploaded payload; it is idempotent because multiple identical PUT requests leave the server in the same state. PATCH applies partial modifications to an existing resource and is generally non-idempotent by default. Idempotency means multiple identical requests have the same intended effect as a single request.",
+    "rubric_hints": [
+      "Correctly defines idempotency",
+      "Differentiates PUT (full replace) vs PATCH (partial)",
+      "Classifies safe vs unsafe methods"
+    ],
+    "follow_ups": [
+      "Is DELETE idempotent?",
+      "How do idempotency keys prevent duplicate charges in payment APIs?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-004",
+    "text": "How do database indexes work under the hood, and what are the trade-offs of adding multiple indexes to a table?",
+    "role": "Backend Developer",
+    "topic": "Databases",
+    "subtopic": "Indexing & Performance",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "B-Tree",
+      "B+ Tree",
+      "lookup",
+      "binary search",
+      "write overhead",
+      "storage",
+      "composite index",
+      "cardinality",
+      "query plan"
+    ],
+    "reference_answer": "Most relational database indexes use B-Tree or B+ Tree data structures. A B+ Tree keeps data sorted with high fan-out, storing keys in internal nodes and all actual row pointers/data in leaf nodes linked sequentially. This reduces disk I/O to O(log N) for point lookups and range scans. Trade-offs: while indexes dramatically accelerate read queries, every insert, update, and delete must update the index structures, adding write latency and consuming additional memory and disk space. High cardinality columns benefit most from indexing.",
+    "rubric_hints": [
+      "Mentions B-Tree / B+ Tree structures",
+      "Explains read acceleration vs write degradation trade-off",
+      "Mentions index selectivity or cardinality"
+    ],
+    "follow_ups": [
+      "When would you choose a Hash index or GIN index over a B-Tree?",
+      "What is a covering index?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-005",
+    "text": "Explain the architectural trade-offs between a monolithic system and a microservices architecture.",
+    "role": "Backend Developer",
+    "topic": "System Design",
+    "subtopic": "Architecture Patterns",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "monolith",
+      "microservices",
+      "deployment",
+      "independent scaling",
+      "network latency",
+      "distributed transactions",
+      "operational overhead",
+      "domain-driven"
+    ],
+    "reference_answer": "A monolith bundles all business logic, data models, and deployables in a single codebase. Benefits include simple local development, straightforward ACID transactions, easy debugging, and zero inter-service network latency. Downsides include shared blast radius, scaling limits, and deployment bottlenecks in large teams. Microservices divide functionality into loosely coupled, independently deployable services around business domains. Benefits are independent scalability and tech stack flexibility. Drawbacks include distributed complexity, network overhead, eventual consistency challenges, and heavy DevOps/monitoring requirements.",
+    "rubric_hints": [
+      "Balances advantages and disadvantages of both",
+      "Discusses operational complexity in microservices",
+      "Refers to domain boundaries and team organization"
+    ],
+    "follow_ups": [
+      "What is Conway's Law in software architecture?",
+      "How does an API gateway simplify microservices communication?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-006",
+    "text": "How do you maintain data consistency across distributed services without distributed two-phase commit locks?",
+    "role": "Backend Developer",
+    "topic": "Databases",
+    "subtopic": "Distributed Transactions",
+    "difficulty": "Hard",
+    "type": "Technical",
+    "expected_concepts": [
+      "Saga pattern",
+      "eventual consistency",
+      "compensating transactions",
+      "outbox pattern",
+      "message broker",
+      "idempotency",
+      "choreography",
+      "orchestration"
+    ],
+    "reference_answer": "In distributed microservices, traditional Two-Phase Commit (2PC) creates blocking locks and single points of failure. Instead, systems use eventual consistency and the Saga Pattern: a sequence of local transactions where each service updates its own database and publishes an event or message. If a step fails, the saga executes compensating transactions in reverse order to undo earlier actions. Sagas can be implemented via Choreography (event-driven) or Orchestration (central coordinator). The Transactional Outbox pattern guarantees reliable event publishing without dual-write failures.",
+    "rubric_hints": [
+      "Recommends Saga pattern and compensating transactions",
+      "Contrasts orchestration vs choreography",
+      "Mentions Transactional Outbox pattern"
+    ],
+    "follow_ups": [
+      "How do you handle idempotency for consumer message processing?",
+      "What happens if a compensating transaction fails?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-007",
+    "text": "What are SQL Injection, XSS, and CSRF vulnerabilities, and what concrete measures prevent them?",
+    "role": "Backend Developer",
+    "topic": "General",
+    "subtopic": "Application Security",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "SQL injection",
+      "parameterized queries",
+      "XSS",
+      "sanitization",
+      "CSRF",
+      "anti-CSRF tokens",
+      "SameSite cookies",
+      "prepared statements"
+    ],
+    "reference_answer": "SQL Injection occurs when untrusted user input alters database SQL commands; prevent it by using parameterized queries (prepared statements) or ORMs, never concatenating raw strings. XSS (Cross-Site Scripting) injects malicious client-side scripts into web pages; prevent it with output encoding, strict Content Security Policy (CSP), and avoiding unsafe innerHTML. CSRF (Cross-Site Request Forgery) tricks authenticated users into submitting unwanted requests; prevent it using anti-CSRF synchronizer tokens and configuring cookies with SameSite=Strict/Lax and HttpOnly flags.",
+    "rubric_hints": [
+      "Explains mechanism of all three attacks",
+      "Gives concrete defenses for each",
+      "Emphasizes parameterized queries and secure cookies"
+    ],
+    "follow_ups": [
+      "What is the difference between Stored, Reflected, and DOM-based XSS?",
+      "Why is HTTPS alone insufficient against CSRF?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-008",
+    "text": "What is the difference between authentication and authorization, and how do JWTs (JSON Web Tokens) work?",
+    "role": "Backend Developer",
+    "topic": "API Design",
+    "subtopic": "Security & Identity",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "authentication",
+      "authorization",
+      "JWT",
+      "header",
+      "payload",
+      "signature",
+      "stateless",
+      "secret key/public key",
+      "expiration"
+    ],
+    "reference_answer": "Authentication verifies identity ('who you are'), e.g. through passwords or MFA. Authorization verifies permissions ('what you are allowed to do'), e.g. role-based access control. A JSON Web Token (JWT) is a compact, URL-safe token containing three base64url-encoded parts separated by dots: Header (algorithm), Payload (claims like user_id and expiration exp), and Signature (header and payload hashed with a secret key or signed with a private key). Because servers verify the signature without querying a central session database, JWTs enable stateless authentication.",
+    "rubric_hints": [
+      "Clearly separates authentication from authorization",
+      "Breaks down JWT structure (Header, Payload, Signature)",
+      "Mentions token expiration and revocation challenges"
+    ],
+    "follow_ups": [
+      "How do you revoke a stateless JWT before its expiration?",
+      "Why should sensitive information never be stored in a JWT payload?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-009",
+    "text": "Explain the CAP theorem and how it guides architectural trade-offs in distributed database selection.",
+    "role": "Backend Developer",
+    "topic": "Databases",
+    "subtopic": "Distributed Systems",
+    "difficulty": "Hard",
+    "type": "Technical",
+    "expected_concepts": [
+      "CAP theorem",
+      "Consistency",
+      "Availability",
+      "Partition tolerance",
+      "network partition",
+      "CP vs AP",
+      "PACELC",
+      "eventual consistency"
+    ],
+    "reference_answer": "The CAP theorem states that a distributed data store can guarantee at most two of three properties simultaneously: Consistency (every read receives the most recent write or an error), Availability (every non-failing node returns a non-error response), and Partition Tolerance (the system functions despite arbitrary network message loss). Because network partitions are inevitable in real-world distributed networks, systems must choose between Consistency (CP, like HBase, CockroachDB, preferring errors over stale data) and Availability (AP, like Cassandra, DynamoDB, returning potentially stale data with eventual consistency).",
+    "rubric_hints": [
+      "Clarifies that Partition tolerance is mandatory in distributed networks",
+      "Contrasts CP vs AP systems with real database examples",
+      "Accurately defines CAP consistency (linearizability)"
+    ],
+    "follow_ups": [
+      "What does the PACELC theorem add to the CAP theorem?",
+      "How does quorum read/write configuration affect consistency in Cassandra?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-010",
+    "text": "Describe common caching strategies (Cache-Aside, Write-Through, Write-Back) and how you handle cache invalidation.",
+    "role": "Backend Developer",
+    "topic": "Databases",
+    "subtopic": "Caching & Redis",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "Cache-Aside",
+      "Write-Through",
+      "Write-Back",
+      "TTL",
+      "cache invalidation",
+      "cache stampede",
+      "Redis",
+      "stale data"
+    ],
+    "reference_answer": "In Cache-Aside (Lazy Loading), the application checks the cache first; on a miss, it reads from the DB, stores the result in cache, and returns it. In Write-Through, the application writes to the cache and DB simultaneously, keeping data fresh at the cost of higher write latency. In Write-Back (Write-Behind), data is written only to cache and asynchronously flushed to the database, maximizing write performance but risking data loss if the cache crashes. Invalidation strategies rely on TTL (Time-To-Live), explicit deletion on updates, and mutex locks to prevent cache stampedes.",
+    "rubric_hints": [
+      "Explains differences between Cache-Aside and Write-Through",
+      "Discusses cache invalidation strategies and TTL",
+      "Mentions cache stampede / thundering herd mitigation"
+    ],
+    "follow_ups": [
+      "What is the difference between cache penetration, cache breakdown, and cache avalanche?",
+      "How does Redis handle memory eviction policies (LRU, LFU)?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-011",
+    "text": "Tell me about a high-severity production outage or critical backend bug you investigated. How did you triage and resolve it?",
+    "role": "Backend Developer",
+    "topic": "General",
+    "subtopic": "Incident Management",
+    "difficulty": "Medium",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "STAR method",
+      "monitoring",
+      "root cause analysis",
+      "rollback",
+      "mitigation",
+      "post-mortem",
+      "metrics",
+      "logs"
+    ],
+    "reference_answer": "Structure using the STAR framework: Situation (describe the scale, symptoms, e.g. spike in 5xx errors or connection pool exhaustion); Task (your responsibility in incident response); Action (triage steps: check telemetry/APM logs, isolate recent deployments, execute immediate mitigation such as rolling back or scaling resources, then investigate root cause like unindexed query or memory leak); Result (service restored, SLA preserved, and blameless post-mortem conducted with permanent preventative measures like alerting and query timeouts).",
+    "rubric_hints": [
+      "Emphasizes immediate mitigation before deep investigation",
+      "Mentions telemetry/logging tools (Datadog, Prometheus, etc.)",
+      "Shares blameless post-mortem and permanent fix"
+    ],
+    "follow_ups": [
+      "How do you decide between a hotfix and a full rollback?",
+      "How do you run a blameless post-mortem?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "be-012",
+    "text": "What motivates you as a backend engineer, and how do you ensure high code quality in API and service development?",
+    "role": "Backend Developer",
+    "topic": "General",
+    "subtopic": "Culture & Engineering Standards",
+    "difficulty": "Easy",
+    "type": "HR",
+    "expected_concepts": [
+      "reliability",
+      "scalability",
+      "automated testing",
+      "unit/integration tests",
+      "CI/CD",
+      "code review",
+      "documentation",
+      "clean architecture"
+    ],
+    "reference_answer": "Highlight a drive for building resilient, high-throughput systems that serve as dependable foundations for products. Code quality is maintained through comprehensive testing pyramids (fast unit tests, integration tests with testcontainers, API contract tests), strict code reviews focusing on edge cases and failure modes, static analysis, automated CI/CD pipelines, and clear OpenAPI documentation.",
+    "rubric_hints": [
+      "Balances technical passion with discipline",
+      "Mentions concrete quality gates (CI/CD, automated tests)",
+      "Demonstrates commitment to maintainability and documentation"
+    ],
+    "follow_ups": [
+      "How do you balance test coverage with rapid feature delivery?",
+      "What is your approach to technical debt?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-006",
+    "text": "Explain SQL window functions and contrast ROW_NUMBER, RANK, and DENSE_RANK with a concrete use case.",
+    "role": "Data Analyst",
+    "topic": "SQL",
+    "subtopic": "Advanced SQL",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "window function",
+      "OVER clause",
+      "PARTITION BY",
+      "ORDER BY",
+      "ROW_NUMBER",
+      "RANK",
+      "DENSE_RANK",
+      "ties"
+    ],
+    "reference_answer": "Window functions perform calculations across a set of table rows related to the current row without collapsing them into a single row like GROUP BY. With PARTITION BY and ORDER BY: ROW_NUMBER() assigns a unique sequential integer to each row, breaking ties arbitrarily (1, 2, 3, 4). RANK() assigns identical ranks to ties and skips subsequent numbers (1, 2, 2, 4). DENSE_RANK() assigns identical ranks to ties without skipping numbers (1, 2, 2, 3). A typical use case is finding the top 3 highest-earning employees per department.",
+    "rubric_hints": [
+      "Distinguishes window functions from GROUP BY",
+      "Accurately contrasts tie-breaking across all three functions",
+      "Provides a clear real-world SQL use case"
+    ],
+    "follow_ups": [
+      "What is the difference between LEAD() and LAG()?",
+      "How does the ROWS BETWEEN window frame clause work?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-007",
+    "text": "How do you clean and preprocess messy datasets in Python using pandas before conducting analysis?",
+    "role": "Data Analyst",
+    "topic": "Python",
+    "subtopic": "Data Cleaning & Pandas",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "pandas",
+      "missing values",
+      "dropna",
+      "fillna",
+      "duplicates",
+      "data types",
+      "outliers",
+      "string normalization"
+    ],
+    "reference_answer": "A standard preprocessing workflow in pandas: 1) Inspection using df.info(), df.describe(), and df.isnull().sum(); 2) Handling missing data via deletion (dropna) or imputation (fillna with mean, median, mode, or forward-fill based on domain); 3) Identifying and removing duplicates with df.drop_duplicates(); 4) Correcting data types (converting strings to datetime with pd.to_datetime, numeric coercion); 5) Normalizing string columns (trimming whitespace, lowercasing); 6) Detecting and addressing outliers using IQR or z-scores.",
+    "rubric_hints": [
+      "Outlines a systematic end-to-end cleaning pipeline",
+      "Mentions specific pandas methods",
+      "Discusses informed handling of missing values"
+    ],
+    "follow_ups": [
+      "When is median imputation preferred over mean imputation?",
+      "How do you handle categorical encoding in pandas?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-008",
+    "text": "How would you explain A/B testing, statistical significance, and p-values to a non-technical marketing stakeholder?",
+    "role": "Data Analyst",
+    "topic": "Statistics",
+    "subtopic": "Experimentation & Communication",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "A/B testing",
+      "control vs variant",
+      "randomization",
+      "sample size",
+      "statistical significance",
+      "p-value",
+      "confidence level",
+      "plain language"
+    ],
+    "reference_answer": "Explain by analogy: an A/B test is like comparing two coin designs to see which lands heads more often. We randomly split users into Group A (current version) and Group B (new version). Because random noise always exists, statistical significance tells us whether the difference in conversion rate is real or just luck. A p-value is the probability that we would see this improvement purely by random coincidence if the change actually had zero effect. If the p-value is under 5% (p < 0.05), we can be 95% confident the new design genuinely caused the uplift.",
+    "rubric_hints": [
+      "Avoids heavy jargon and uses relatable analogies",
+      "Accurately explains the p-value in layman's terms",
+      "Highlights business decision-making relevance"
+    ],
+    "follow_ups": [
+      "What is sample size calculation and why shouldn't you stop an A/B test early?",
+      "What is survivorship bias?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-009",
+    "text": "If daily active users (DAU) dropped suddenly by 15% overnight, how would you systematically investigate the root cause?",
+    "role": "Data Analyst",
+    "topic": "Statistics",
+    "subtopic": "Metrics & Diagnostics",
+    "difficulty": "Hard",
+    "type": "Technical",
+    "expected_concepts": [
+      "data pipeline verification",
+      "segmentation",
+      "geography",
+      "platform",
+      "release correlation",
+      "funnel analysis",
+      "external factors"
+    ],
+    "reference_answer": "Investigation framework: 1) Verify data integrity: check logging pipelines, telemetry ingestion, and ETL jobs to confirm it is not a tracking glitch; 2) Determine scope: segment the drop across dimensions — platform (iOS, Android, Web), app version, geography, user cohorts (new vs returning users), and marketing channels; 3) Internal factors: correlate with recent code deployments, server outages, feature releases, or tracking SDK updates; 4) Funnel analysis: find the exact drop-off step (login, onboarding, checkout); 5) External factors: holidays, competitor promotions, ISP outages, or app store policy updates.",
+    "rubric_hints": [
+      "First validates data pipeline integrity",
+      "Uses structured multi-dimensional segmentation",
+      "Distinguishes internal vs external causes"
+    ],
+    "follow_ups": [
+      "How do you differentiate a seasonal drop from a genuine anomaly?",
+      "How do you present incident findings to executives?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-010",
+    "text": "What is the difference between a star schema and a snowflake schema in data warehousing?",
+    "role": "Data Analyst",
+    "topic": "Databases",
+    "subtopic": "Data Modeling",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "star schema",
+      "snowflake schema",
+      "fact table",
+      "dimension table",
+      "normalization",
+      "denormalization",
+      "join performance",
+      "BI reporting"
+    ],
+    "reference_answer": "Both are dimensional modeling techniques for data warehouses centered around fact tables containing numeric metrics. In a Star Schema, dimension tables are completely denormalized, meaning each dimension is represented by a single table directly joined to the fact table. This yields simpler SQL queries, fewer joins, and faster read performance for BI tools. In a Snowflake Schema, dimension tables are normalized into sub-dimension tables (e.g. splitting product into product, category, and brand), reducing storage redundancy but requiring more complex multi-table joins.",
+    "rubric_hints": [
+      "Explains fact vs dimension tables",
+      "Contrasts denormalized (Star) vs normalized (Snowflake)",
+      "Discusses query complexity and BI query performance"
+    ],
+    "follow_ups": [
+      "What is a slowly changing dimension (SCD Type 2)?",
+      "What is an OLAP cube vs OLTP database?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-011",
+    "text": "Describe a project where your data analysis led directly to a strategic business decision or process change.",
+    "role": "Data Analyst",
+    "topic": "General",
+    "subtopic": "Business Impact",
+    "difficulty": "Easy",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "STAR method",
+      "business problem",
+      "data exploration",
+      "visualization",
+      "stakeholder communication",
+      "quantified impact",
+      "decision"
+    ],
+    "reference_answer": "Use the STAR framework: Situation (describe the business question or operational friction, e.g., high customer churn or inefficient ad spend); Task (what analysis you set out to deliver); Action (data collected, SQL/Python modeling, visualizations built in Tableau/Power BI, and how you communicated insights to non-technical leaders); Result (specific business metric improved, e.g. reduced churn by 8% or saved $50,000 in monthly ad budget).",
+    "rubric_hints": [
+      "Emphasizes business outcome over raw technical steps",
+      "Includes quantified metrics and results",
+      "Shows strong stakeholder translation"
+    ],
+    "follow_ups": [
+      "What pushback did you receive from stakeholders and how did you address it?",
+      "How did you validate your recommendations post-launch?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "da-012",
+    "text": "What are Type I and Type II errors in hypothesis testing, and what are the practical implications of each in business?",
+    "role": "Data Analyst",
+    "topic": "Statistics",
+    "subtopic": "Statistical Inference",
+    "difficulty": "Hard",
+    "type": "Technical",
+    "expected_concepts": [
+      "Type I error",
+      "Type II error",
+      "false positive",
+      "false negative",
+      "null hypothesis",
+      "alpha",
+      "beta",
+      "statistical power",
+      "business trade-off"
+    ],
+    "reference_answer": "A Type I error is a False Positive (rejecting the null hypothesis when it is actually true; alpha level, typically 5%). In business, this means concluding a new website feature works when it doesn't, wasting engineering resources. A Type II error is a False Negative (failing to reject the null hypothesis when an effect actually exists; beta level, related to statistical power 1 - beta). In business, this means discarding an effective feature because the sample size was too small to detect the difference. Balancing them depends on the cost of false optimism versus missed opportunities.",
+    "rubric_hints": [
+      "Accurately defines Type I (false positive) and Type II (false negative)",
+      "Connects each error type to business consequences",
+      "Mentions statistical power and sample size"
+    ],
+    "follow_ups": [
+      "How does increasing sample size affect Type I and Type II error rates?",
+      "What is the Bonferroni correction for multiple hypothesis testing?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-002",
+    "text": "Tell me about your product management philosophy and how you develop deep empathy for users.",
+    "role": "Product Manager",
+    "topic": "General",
+    "subtopic": "Product Philosophy",
+    "difficulty": "Easy",
+    "type": "HR",
+    "expected_concepts": [
+      "user empathy",
+      "customer discovery",
+      "data-informed",
+      "problem vs solution space",
+      "cross-functional collaboration",
+      "outcomes over outputs"
+    ],
+    "reference_answer": "A strong answer centers on falling in love with the user's problem rather than a specific solution. Good PMs prioritize continuous user discovery: direct qualitative customer interviews, observing users navigate products unguided, reviewing support tickets, and pairing qualitative signals with behavioral product analytics. Emphasize 'outcomes over outputs' — measuring success by customer value created and business metrics moved, rather than sheer velocity of shipped features.",
+    "rubric_hints": [
+      "Prioritizes customer problems over technology solutions",
+      "Combines qualitative feedback with quantitative data",
+      "Advocates outcomes over feature output"
+    ],
+    "follow_ups": [
+      "How do you ensure user empathy is shared across engineering and design?",
+      "How do you avoid building for the loudest customer?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-003",
+    "text": "How do you prioritize competing feature requests from sales, executives, engineering, and end users?",
+    "role": "Product Manager",
+    "topic": "Product Strategy",
+    "subtopic": "Prioritization Frameworks",
+    "difficulty": "Easy",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "RICE framework",
+      "MoSCoW",
+      "strategic alignment",
+      "trade-offs",
+      "saying no",
+      "ROI",
+      "technical debt",
+      "stakeholder management"
+    ],
+    "reference_answer": "Use structured frameworks like RICE (Reach, Impact, Confidence, Effort) to evaluate opportunities objectively. Step 1: Align all candidates against company strategic goals and OKRs; Step 2: Score initiatives collaboratively with engineering for Effort and design/product for Impact; Step 3: Maintain a balanced roadmap (e.g. 60% core customer features, 20% technical debt and stability, 20% high-risk innovation); Step 4: Communicate decisions transparently to stakeholders with clear rationales when saying 'not now'.",
+    "rubric_hints": [
+      "Mentions an established framework (RICE, Kano, Cost of Delay)",
+      "Balances business demands with technical debt",
+      "Demonstrates graceful stakeholder communication when saying no"
+    ],
+    "follow_ups": [
+      "How do you handle an executive demanding an immediate pet feature?",
+      "How do you evaluate confidence in the RICE score?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-004",
+    "text": "How do you define success metrics and establish a North Star Metric for a new product feature?",
+    "role": "Product Manager",
+    "topic": "Product Strategy",
+    "subtopic": "Metrics & Analytics",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "North Star Metric",
+      "leading vs lagging",
+      "acquisition",
+      "activation",
+      "retention",
+      "guardrail metrics",
+      "cannibalization"
+    ],
+    "reference_answer": "A North Star Metric (NSM) captures the core value delivered to customers and correlates with sustainable business revenue (e.g., Spotify: time spent listening; Airbnb: nights booked). For a feature launch, define: 1) Adoption & Activation metrics (what percentage of active users discover and try it); 2) Engagement & Retention (do users repeatedly use it over 30/60/90 days); 3) Business outcome (conversion or revenue impact); 4) Guardrail metrics (ensuring feature usage doesn't degrade page load latency, unsubscribe rates, or cannibalize other core features).",
+    "rubric_hints": [
+      "Distinguishes North Star from vanity metrics",
+      "Includes guardrail / health metrics to monitor negative side-effects",
+      "Pairs leading indicators with lagging outcomes"
+    ],
+    "follow_ups": [
+      "What is a vanity metric versus an actionable metric?",
+      "How do you establish baselines for a brand new product category?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-005",
+    "text": "Walk me through how you conduct user discovery interviews to uncover unarticulated customer pain points.",
+    "role": "Product Manager",
+    "topic": "Product Strategy",
+    "subtopic": "Customer Research",
+    "difficulty": "Medium",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "open-ended questions",
+      "The Mom Test",
+      "past behavior",
+      "listening",
+      "avoid leading questions",
+      "pain points",
+      "synthesis"
+    ],
+    "reference_answer": "Follow 'The Mom Test' principles: 1) Talk about the customer's actual life and past behaviors rather than hypothetical future ideas; 2) Ask open-ended questions like 'Tell me about the last time you tried to solve X' and 'What was the hardest part about that?'; 3) Avoid asking 'Would you buy a feature that does Y?' because people are overly polite and poor predictors of future behavior; 4) Dig deep into workarounds they currently use (spreadsheets, manual steps), which signal genuine willingness to pay; 5) Synthesize findings into user journey maps and JTBD (Jobs To Be Done).",
+    "rubric_hints": [
+      "Focuses on past actual behavior over hypothetical opinions",
+      "Avoids leading or pitch-style questions",
+      "Identifies existing hacks and workarounds as proof of pain"
+    ],
+    "follow_ups": [
+      "How many customer interviews are typically needed before patterns emerge?",
+      "How do you reconcile user interviews that contradict quantitative data?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-006",
+    "text": "If a well-funded competitor launches a feature copying your product at a lower price point, how do you respond?",
+    "role": "Product Manager",
+    "topic": "Product Strategy",
+    "subtopic": "Competitive Strategy",
+    "difficulty": "Hard",
+    "type": "Technical",
+    "expected_concepts": [
+      "competitive analysis",
+      "differentiation",
+      "switching costs",
+      "moat",
+      "network effects",
+      "customer retention",
+      "strategic focus"
+    ],
+    "reference_answer": "Avoid knee-jerk feature-matching or immediate price wars, which erode margins. Process: 1) Assess impact through data: are existing customers churning, or is win-rate in sales pipelines dropping?; 2) Talk to affected customers to understand why the competitor's offer is appealing; 3) Double down on your core differentiator and economic moat (proprietary data, ecosystem integrations, higher switching costs, superior UX, or network effects); 4) Consider product packaging adjustments (e.g. freemium tier or unbundling) rather than panic discounting; 5) Stay focused on your long-term product vision.",
+    "rubric_hints": [
+      "Avoids reflexive panic reactions",
+      "Investigates customer impact objectively",
+      "Focuses on defensible competitive moats"
+    ],
+    "follow_ups": [
+      "What constitutes a true sustainable moat in software?",
+      "When does it make sense to adopt a competitor's feature?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-007",
+    "text": "Tell me about a time engineering pushed back on your product specifications or timeline. How did you resolve it?",
+    "role": "Product Manager",
+    "topic": "General",
+    "subtopic": "Cross-Functional Collaboration",
+    "difficulty": "Medium",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "STAR method",
+      "collaborative scoping",
+      "trade-offs",
+      "listening",
+      "technical constraints",
+      "MVP phasing",
+      "mutual trust"
+    ],
+    "reference_answer": "Use the STAR method: Situation (describe feature scope and proposed timeline where engineering expressed concerns about architectural debt or feasibility); Task (finding a solution that hits the business deadline without compromising stability); Action (sat down with the tech lead, brought customer context and success criteria, listened to technical blockers, and collaboratively descoped 30% of non-essential complexity while preserving the core user value for Phase 1); Result (shipped on schedule, built trust, and planned Phase 2 based on live user data).",
+    "rubric_hints": [
+      "Views engineering pushback constructively as a partnership",
+      "Demonstrates flexibility in scoping without sacrificing value",
+      "Shares outcome and lasting relationship improvement"
+    ],
+    "follow_ups": [
+      "How do you earn respect from highly technical engineering teams?",
+      "How do you handle technical debt in roadmap negotiations?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-008",
+    "text": "What is a Minimum Viable Product (MVP), and how do you decide what belongs in Version 1.0 versus future releases?",
+    "role": "Product Manager",
+    "topic": "Product Strategy",
+    "subtopic": "Product Scoping",
+    "difficulty": "Easy",
+    "type": "Technical",
+    "expected_concepts": [
+      "MVP",
+      "hypothesis testing",
+      "learning",
+      "core value proposition",
+      "user feedback",
+      "scope trimming",
+      "must-have vs nice-to-have"
+    ],
+    "reference_answer": "An MVP is the smallest version of a new product or feature that allows a team to collect the maximum amount of validated learning about customers with the least effort. It is not an unfinished product, but rather a functional end-to-end slice delivering core value (the 'skateboard' in the skateboard-to-car metaphor). To scope v1.0: identify the central hypothesis being tested; include only features indispensable to solving the single primary pain point; defer secondary enhancements, advanced configuration, and automated edge cases to fast-follow iterations guided by actual usage data.",
+    "rubric_hints": [
+      "Emphasizes validated learning over feature completeness",
+      "Uses the vertical slice analogy",
+      "Establishes clear criteria for cutting v1 scope"
+    ],
+    "follow_ups": [
+      "What is the difference between a prototype, a proof-of-concept, and an MVP?",
+      "How do you prevent an MVP from becoming a permanently buggy production release?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-009",
+    "text": "Tell me about a product feature you launched that failed to meet expectations. What went wrong and what did you learn?",
+    "role": "Product Manager",
+    "topic": "Product Strategy",
+    "subtopic": "Failure & Reflection",
+    "difficulty": "Hard",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "STAR method",
+      "humility",
+      "root cause",
+      "post-mortem",
+      "low adoption",
+      "pivot",
+      "learnings applied"
+    ],
+    "reference_answer": "Use the STAR framework: Situation (describe the product initiative and the initial hypothesis); Task (the targets set for adoption and engagement); Action (after launch, metrics fell far below target; instead of blaming marketing or users, conducted immediate exit interviews and analyzed drop-off funnels, discovering that the setup friction was too high or solved a secondary annoyance rather than a top-3 priority); Result (sunsetted or redesigned the feature, documented lessons learned, and instituted mandatory pre-launch prototype testing that saved subsequent quarters from similar missteps).",
+    "rubric_hints": [
+      "Takes personal ownership without deflection",
+      "Diagnoses root cause objectively through data and interviews",
+      "Shares tangible process improvements implemented afterwards"
+    ],
+    "follow_ups": [
+      "When is the right time to sunset an underperforming feature?",
+      "How do you communicate feature deprecation to passionate users?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-010",
+    "text": "How do you design a self-serve onboarding experience for a B2B SaaS product to maximize 30-day retention?",
+    "role": "Product Manager",
+    "topic": "Product Strategy",
+    "subtopic": "User Experience & Retention",
+    "difficulty": "Medium",
+    "type": "Technical",
+    "expected_concepts": [
+      "Time-to-Value (TTV)",
+      "Aha moment",
+      "empty states",
+      "friction reduction",
+      "progressive disclosure",
+      "activation milestone",
+      "onboarding checklists"
+    ],
+    "reference_answer": "Key goal: minimize Time-to-Value (TTV) so the user experiences the 'Aha moment' in their very first session. Strategy: 1) Identify the activation milestone that correlates with long-term retention (e.g. inviting 2 team members and sending 1 message); 2) Remove all non-essential registration hurdles (defer email verification, offer SSO); 3) Provide populated templates and intelligent sample data instead of blank empty states; 4) Use progressive disclosure with interactive checklists guiding users to complete key actions; 5) Trigger contextual emails based on what users haven't completed after 48 hours.",
+    "rubric_hints": [
+      "Focuses on Time-to-Value and the Aha moment",
+      "Addresses empty states with templates and sample data",
+      "Combines in-product guidance with lifecycle messaging"
+    ],
+    "follow_ups": [
+      "How do you balance self-serve onboarding with human-assisted sales motions?",
+      "What metrics signal onboarding drop-off?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-011",
+    "text": "How do you stay informed about emerging technology trends, product craft, and user behavior shifts?",
+    "role": "Product Manager",
+    "topic": "General",
+    "subtopic": "Continuous Learning",
+    "difficulty": "Easy",
+    "type": "HR",
+    "expected_concepts": [
+      "product teardowns",
+      "industry newsletters",
+      "customer advisory boards",
+      "hands-on testing",
+      "podcasts/books",
+      "curiosity"
+    ],
+    "reference_answer": "Express genuine curiosity and disciplined habits: 1) Regularly conduct teardowns of top consumer and B2B products to dissect their onboarding, paywalls, and interactions; 2) Follow trusted product thinkers and industry newsletters (e.g. Lenny's Newsletter, Stratechery); 3) Engage directly in user communities and subreddits where target users discuss their day-to-day challenges; 4) Experiment hands-on with emerging AI tools, APIs, and design prototypes.",
+    "rubric_hints": [
+      "Demonstrates active product curiosity",
+      "Names specific methods like teardowns and newsletters",
+      "Applies learnings directly to day-to-day product craft"
+    ],
+    "follow_ups": [
+      "What is the most well-designed software product you used recently and why?",
+      "How do you distinguish genuine technology shifts from short-term hype?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "pm-012",
+    "text": "How would you determine pricing and packaging for a new tier in a SaaS software product?",
+    "role": "Product Manager",
+    "topic": "Product Strategy",
+    "subtopic": "Pricing & Monetization",
+    "difficulty": "Hard",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "value metric",
+      "Van Westendorp",
+      "willingness to pay",
+      "competitor benchmarking",
+      "tier differentiation",
+      "expansion revenue"
+    ],
+    "reference_answer": "Pricing reflects value delivered, not cost to build. Framework: 1) Determine the Value Metric (the metric that scales as customers grow value, e.g. per seat, per gigabyte, per transaction); 2) Conduct Willingness-to-Pay research using the Van Westendorp Price Sensitivity Meter or Conjoint Analysis through customer surveys; 3) Structure tiers logically: Starter (low barrier to adoption), Pro (power user features and automation), Enterprise (SSO, audit logs, dedicated support, custom SLAs); 4) Benchmark competitive alternatives while avoiding pure cost-plus pricing; 5) A/B test pricing pages or roll out with pilot customer cohorts.",
+    "rubric_hints": [
+      "Identifies the right value metric",
+      "References research methodologies (Van Westendorp, Conjoint)",
+      "Clearly delineates Enterprise vs Pro feature gating"
+    ],
+    "follow_ups": [
+      "Why is per-seat pricing sometimes misaligned with customer value?",
+      "How do you handle grandfathering existing customers when prices increase?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-006",
+    "text": "Tell me about a time you had a significant disagreement with a teammate or manager. How did you handle it?",
+    "role": "HR / Behavioral",
+    "topic": "Conflict Resolution",
+    "subtopic": "Interpersonal Skills",
+    "difficulty": "Medium",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "STAR method",
+      "respectful communication",
+      "active listening",
+      "focus on data/goals",
+      "compromise",
+      "disagree and commit"
+    ],
+    "reference_answer": "Use the STAR method: Situation (describe a technical or architectural disagreement); Task (needing to reach consensus without stalling project progress or damaging relationships); Action (arranged a 1-on-1 discussion, listened empathetically to their rationale, separated personal opinions from objective requirements, focused on shared customer goals, and tested both approaches with a quick proof of concept); Result (reached a unified decision; practiced 'disagree and commit' if necessary, and preserved a strong, trusting working relationship).",
+    "rubric_hints": [
+      "Focuses on ideas and data rather than personalities",
+      "Shows active listening and willingness to compromise",
+      "Demonstrates the principle of 'disagree and commit'"
+    ],
+    "follow_ups": [
+      "What would you do if a colleague refused to collaborate after a disagreement?",
+      "How do you handle disagreements with executives?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-007",
+    "text": "Describe a situation where you took initiative and led a project or process improvement without being asked.",
+    "role": "HR / Behavioral",
+    "topic": "Leadership",
+    "subtopic": "Ownership & Initiative",
+    "difficulty": "Medium",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "STAR method",
+      "proactivity",
+      "problem identification",
+      "ownership",
+      "stakeholder buy-in",
+      "execution",
+      "quantified impact"
+    ],
+    "reference_answer": "Structure via STAR: Situation (noticed an unaddressed problem, such as flaky automated tests causing deployment delays or onboarding documentation being outdated); Task (took ownership of solving it despite it not being an assigned ticket); Action (investigated root causes, proposed a clear solution, secured buy-in from leadership, and rallied two teammates during a hack sprint to implement it); Result (shorter build times by 40%, smoother onboarding for new hires, and established a new team best practice).",
+    "rubric_hints": [
+      "Demonstrates high agency and ownership mindset",
+      "Shows ability to gain consensus without formal authority",
+      "Quantifies the positive business or team outcome"
+    ],
+    "follow_ups": [
+      "How do you balance proactive initiatives with your day-to-day assigned tasks?",
+      "What is an area in your current workflow you would love to improve?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-008",
+    "text": "Tell me about a time when company priorities shifted abruptly and you had to adapt quickly.",
+    "role": "HR / Behavioral",
+    "topic": "Adaptability",
+    "subtopic": "Resilience & Change Management",
+    "difficulty": "Medium",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "STAR method",
+      "resilience",
+      "flexibility",
+      "re-prioritization",
+      "positive attitude",
+      "rapid onboarding",
+      "business context"
+    ],
+    "reference_answer": "Use STAR: Situation (a major project you worked on for weeks was paused or deprioritized due to shifting market conditions or executive strategy); Task (pivoting immediately to a new high-priority project with unfamiliar technologies or domain); Action (accepted the business necessity with a positive attitude, cleanly documented the paused project for future resumption, rapidly ramped up on the new domain, and helped teammates realign); Result (successfully delivered the urgent new initiative on time and supported team morale during uncertainty).",
+    "rubric_hints": [
+      "Demonstrates emotional maturity and business empathy",
+      "Shows fast ramp-up and structured transition",
+      "Maintains team morale during turbulent shifts"
+    ],
+    "follow_ups": [
+      "How do you stay motivated when work you invested in gets cancelled?",
+      "How do you help junior team members navigate sudden changes?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-009",
+    "text": "What has been your greatest professional failure or mistake, and how did it shape your growth?",
+    "role": "HR / Behavioral",
+    "topic": "Problem Solving",
+    "subtopic": "Self-Awareness & Accountability",
+    "difficulty": "Hard",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "STAR method",
+      "genuine mistake",
+      "immediate accountability",
+      "remediation",
+      "humility",
+      "lessons learned",
+      "systemic improvement"
+    ],
+    "reference_answer": "Select a genuine mistake (not a disguised humblebrag): Situation (e.g., misconfigured deployment script, overlooked edge case in data migration, or underestimating project scope); Task (owning the incident and remediating the consequences); Action (immediately took full responsibility without blaming tools or teammates, communicated transparently to affected stakeholders, worked overtime to fix the root issue, and implemented automated guardrails/checklists); Result (prevented recurrence permanently and gained respect for transparency and accountability).",
+    "rubric_hints": [
+      "Takes full personal ownership without making excuses",
+      "Describes tangible corrective action",
+      "Demonstrates self-reflection and lasting behavioral growth"
+    ],
+    "follow_ups": [
+      "How do you foster an environment where team members feel safe admitting mistakes?",
+      "What safeguards did you put in place to ensure it never happened again?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-010",
+    "text": "Where do you see yourself in three to five years, and how does this role fit into your long-term career goals?",
+    "role": "HR / Behavioral",
+    "topic": "Self-Awareness",
+    "subtopic": "Career Ambition",
+    "difficulty": "Easy",
+    "type": "HR",
+    "expected_concepts": [
+      "career trajectory",
+      "skill mastery",
+      "mentorship/leadership",
+      "alignment with company",
+      "realistic ambition",
+      "continuous learning"
+    ],
+    "reference_answer": "A strong answer balances ambition with realism: Express commitment to mastering the technical and domain complexities of this specific role in the first 1–2 years, delivering major impactful projects. Over 3–5 years, aim to expand scope: mentoring junior engineers, taking ownership of larger architectural decisions or cross-team initiatives, and potentially advancing into staff-level engineering or engineering management. Connect this trajectory directly to the growth opportunities and challenges offered by this organization.",
+    "rubric_hints": [
+      "Demonstrates commitment to the current role first",
+      "Presents a logical progression of skills and responsibility",
+      "Aligns personal growth with company success"
+    ],
+    "follow_ups": [
+      "What skills do you need to develop most to reach that goal?",
+      "What kind of mentorship helps you perform at your best?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-011",
+    "text": "How do you manage your time and prioritize when faced with multiple urgent deadlines from different stakeholders?",
+    "role": "HR / Behavioral",
+    "topic": "Problem Solving",
+    "subtopic": "Time Management",
+    "difficulty": "Medium",
+    "type": "Behavioral",
+    "expected_concepts": [
+      "Eisenhower matrix",
+      "urgent vs important",
+      "transparent communication",
+      "setting boundaries",
+      "focus blocks",
+      "trade-offs"
+    ],
+    "reference_answer": "Use structured prioritization: 1) Differentiate urgency from true business importance (using the Eisenhower Matrix or similar); 2) Communicate proactively with stakeholders — rather than silently burning out, communicate realistic timelines, negotiate scope, and ask managers to help align cross-department priorities; 3) Block out dedicated deep-work time on calendar free of notifications to execute high-cognitive tasks; 4) Break large deliverables into daily incremental milestones.",
+    "rubric_hints": [
+      "Proactively manages expectations rather than overcommitting",
+      "Uses structured methods for distinguishing urgent vs important",
+      "Emphasizes sustainable work habits and communication"
+    ],
+    "follow_ups": [
+      "How do you say no to an urgent request from someone senior?",
+      "How do you prevent context-switching from degrading your code quality?"
+    ],
+    "source": "curated"
+  },
+  {
+    "id": "hr-012",
+    "text": "What type of workplace culture and team dynamics bring out the absolute best in you?",
+    "role": "HR / Behavioral",
+    "topic": "Self-Awareness",
+    "subtopic": "Culture & Team Fit",
+    "difficulty": "Easy",
+    "type": "HR",
+    "expected_concepts": [
+      "psychological safety",
+      "transparency",
+      "high standards",
+      "collaboration",
+      "constructive feedback",
+      "autonomy",
+      "shared mission"
+    ],
+    "reference_answer": "Highlight environments characterized by psychological safety, high engineering standards, and transparent communication. Explain that you thrive when given autonomy and trust to own problems end-to-end, coupled with a culture of regular constructive feedback where team members challenge each other respectfully to improve. Emphasize valuing blameless post-mortems, knowledge sharing, and celebrating team wins collectively.",
+    "rubric_hints": [
+      "Articulates values like psychological safety and autonomy",
+      "Shows appreciation for high standards and feedback",
+      "Demonstrates collaborative spirit and team alignment"
+    ],
+    "follow_ups": [
+      "How do you give constructive feedback to peers?",
+      "What is a culture red flag for you?"
+    ],
+    "source": "curated"
+  }
+]
